@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: ivory;
+            background-color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        input,
+        p,
+        button {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HTML DE LA ACTIVIDAD -->
+    <header>
+        <h1>Mi cuestionario</h1>
+    </header>
+    <main>
+        <p>¿Cuál es la capital de Argentina?</p>
+        <input id="pregunta-1" type="text">
+        <p>¿Cuánto es 2+2?</p>
+        <input id="pregunta-2" type="number">
+        <p>¿De qué color era el caballo blanco de San Martín?</p>
+        <input id="pregunta-3" type="text">
+        <br>
+        <button onclick="comprobarRespuesta()">Comprobar</button>
+        <p id="respuesta-anterior"></p>
+    </main>
+    <!-- VINCULAR/IMPORTAR ARCHIVO pgEvent.js PARA COMUNICACIONES CON PG-->
+<!-- <script type="module" src="./pgEvent.js"></script> -->
+<!-- LÓGICA DE LA ACTIVIDAD -->
+<script src="./script.js"></script>
+</body>
+
+</html>
